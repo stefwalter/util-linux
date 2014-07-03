@@ -385,7 +385,14 @@ displays as:
 This is thingol.orcan.dk (Linux i386 1.1.9) 18:29:30
 .fi
 .RE
-
+.SH SIGNALS
+Upon receiving
+.BR SIGUSR1
+.BR agetty
+will reprint the
+.B /etc/issue
+(if so configured) and login prompt. It will do this unless the
+user has started typing a login name.
 .SH FILES
 .na
 .TP
